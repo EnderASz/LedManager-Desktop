@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<TabPane prefHeight="720.0" prefWidth="1080.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <tabs>
+      <Tab text="Projekt">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1080.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="28.0" minWidth="28.0" prefWidth="28.0" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="1020.0" minWidth="5.0" percentWidth="27.0" prefWidth="979.0" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="3.0" />
+                        <ColumnConstraints hgrow="NEVER" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="ALWAYS" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.0" minWidth="0.0" percentWidth="2.0" prefWidth="41.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                        <RowConstraints minHeight="0.0" percentHeight="0.0" prefHeight="4.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                        <RowConstraints vgrow="NEVER" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="ALWAYS" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER" />
+                        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" vgrow="NEVER" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="10.0" vgrow="NEVER" />
+                        <RowConstraints maxHeight="32.0" minHeight="32.0" percentHeight="5.0" prefHeight="32.0" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                     </rowConstraints>
+                     <children>
+                        <TreeTableView prefHeight="200.0" prefWidth="200.0" showRoot="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="4">
+                           <columns>
+                              <TreeTableColumn prefWidth="31.0" />
+                              <TreeTableColumn prefWidth="149.0" text="Nazwa grupy" />
+                              <TreeTableColumn prefWidth="70.0" text="GroupID" />
+                              <TreeTableColumn prefWidth="70.0" text="LedID" />
+                           </columns>
+                        </TreeTableView>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="11">
+                           <buttons>
+                              <Button mnemonicParsing="false" text="Zatwierdź" />
+                              <Button mnemonicParsing="false" text="Zapisz" />
+                           </buttons>
+                        </ButtonBar>
+                        <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="11">
+                           <buttons>
+                              <Button mnemonicParsing="false" text="Otwórz..." />
+                              <Button mnemonicParsing="false" text="Nowy projekt" />
+                           </buttons>
+                        </ButtonBar>
+                        <ButtonBar prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                           <buttons>
+                              <Button mnemonicParsing="false" text="Zarządzaj" />
+                           </buttons>
+                        </ButtonBar>
+                        <HBox minHeight="0.0" minWidth="0.0" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="Some long project name Lorem Ipsum" textFill="#394446">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ButtonBar buttonMinWidth="110.0">
+                                 <buttons>
+                                    <Button alignment="CENTER" mnemonicParsing="false" text="Zmień nazwę" textAlignment="CENTER" />
+                                 </buttons>
+                              </ButtonBar>
+                           </children>
+                        </HBox>
+                        <Label text="Tryb diody" textFill="#4b5657" GridPane.columnIndex="5" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <padding>
+                              <Insets bottom="2.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox prefWidth="150.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                        <AnchorPane GridPane.columnIndex="4" GridPane.columnSpan="5" GridPane.rowIndex="7" GridPane.rowSpan="3">
+                           <children>
+                              <GridPane prefHeight="499.0" prefWidth="694.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="3.0" />
+                                    <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" />
+                                    <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+                                    <ColumnConstraints hgrow="ALWAYS" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="3.0" />
+                                    <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" />
+                                    <ColumnConstraints hgrow="ALWAYS" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+                                    <RowConstraints vgrow="ALWAYS" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ColorPicker GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                    <Label text="Kolor świecenia" textFill="#4b5657" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <padding>
+                                          <Insets bottom="2.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Czas świecienia (s)" textFill="#4b5657" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <padding>
+                                          <Insets bottom="2.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField text="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                                    <Label text="Interwał (s)" textFill="#4b5657" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                       <padding>
+                                          <Insets bottom="2.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField text="1" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                        <Label text="Kopiuj/Wklej konfigurację" textFill="#4b5657" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                           <padding>
+                              <Insets bottom="2.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                           <children>
+                              <Button disable="true" mnemonicParsing="false" prefWidth="60.0" text="Kopiuj">
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button disable="true" mnemonicParsing="false" prefWidth="60.0" text="Wklej">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Serwer">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
