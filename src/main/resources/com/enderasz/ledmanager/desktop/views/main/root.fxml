@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="720.0" prefWidth="1080.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.6"
+         xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.enderasz.ledmanager.desktop.controllers.views.main.MainViewController" fx:id="rootNode">
+    <tabs>
+        <Tab text="%project_tab_name">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" fx:id="projectViewAnchor">
+                    <children>
+                        <fx:include source="project/root.fxml" fx:id="projectView"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="%server_tab_name">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <!--                        <fx:include source="server.fxml" fx:id="projectView"/>-->
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

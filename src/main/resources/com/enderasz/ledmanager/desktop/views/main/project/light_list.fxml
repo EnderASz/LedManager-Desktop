@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TreeTableView
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.enderasz.ledmanager.desktop.controllers.views.main.project.lightlist.LightListViewController"
+        fx:id="lightList" prefWidth="292.0" showRoot="false">
+    <columns>
+        <TreeTableColumn fx:id="lightListGroupNameColumn" editable="false" minWidth="-Infinity" prefWidth="200.0"
+                         sortable="false" text="%light_list_group_name"/>
+        <TreeTableColumn fx:id="lightListLightIdColumn" editable="false" minWidth="-Infinity" prefWidth="90.0"
+                         sortable="false" text="%light_list_led_id"/>
+    </columns>
+    <columnResizePolicy>
+        <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+    </columnResizePolicy>
+</TreeTableView>

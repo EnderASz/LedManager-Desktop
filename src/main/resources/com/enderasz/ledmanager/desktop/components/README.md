@@ -4,7 +4,7 @@ Do not put here any:
 - views - FXML resources meant to be loaded as root node of the scene
 - sub-views - FXML resources meant to be included only in one place of other FXML resource 
 
-Do not load any of resources contained here as root node of the scene.
+Do not load any of resources contained here as root node of the scene or via `fx:include`.
 
 ## What is a component?
 A component is a FXML reusable resource meant to be used in many places.

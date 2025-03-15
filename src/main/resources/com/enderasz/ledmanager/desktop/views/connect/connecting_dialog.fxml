@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enderasz.ledmanager.desktop.controllers.views.connect.ConnectingDialogController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="250.0" />
+        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="20.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="15.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="NEVER" />
+        <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" vgrow="NEVER" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" text="%conn_dialog_status_not_initialized" textFill="#4b5657" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <padding>
+                <Insets bottom="2.0" />
+            </padding>
+            <font>
+                <Font name="System Italic" size="12.0" />
+            </font>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </Label>
+          <Button fx:id="cancelBtn" cancelButton="true" defaultButton="true" mnemonicParsing="false" onAction="#handleCancelAction" text="%conn_dialog_cancel_btn" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+              <padding>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+              </padding>
+          </Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <image>
+            <Image url="@../../assets/loading_wheel.gif" />
+         </image>
+      </ImageView>
+    </children>
+</GridPane>

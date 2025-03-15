@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.enderasz.ledmanager.desktop.ledmanagerdesktop/com.enderasz.ledmanager.desktop.HelloApplication
+                                com.enderasz.ledmanager.desktop.ledmanagerdesktop/com.enderasz.ledmanager.desktop.MainApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
